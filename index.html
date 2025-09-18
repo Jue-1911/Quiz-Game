@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Computer Knowledge Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Computer Basics Quiz</h1>
+        <div id="quiz-container">
+            <div id="start-screen" class="screen">
+                <h2>Test Your Computer Knowledge!</h2>
+                <p>Answer questions about computer basics, operating systems, and beginner programming concepts.</p>
+                <button id="start-btn" class="btn">Start Quiz</button>
+            </div>
+            
+            <div id="question-screen" class="screen hidden">
+                <div id="quiz-header">
+                    <div id="timer">Time: <span id="time-remaining">180</span>s</div>
+                    <div id="progress">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
+                </div>
+                <h2 id="question-text">Question goes here</h2>
+                <div id="answers" class="answers-container">
+                    <!-- Answer options will be inserted here by JavaScript -->
+                </div>
+                <div id="feedback" class="hidden"></div>
+                <button id="next-btn" class="btn hidden">Next Question</button>
+            </div>
+            
+            <div id="results-screen" class="screen hidden">
+                <h2>Quiz Results</h2>
+                <p>Your score: <span id="final-score">0</span>/<span id="max-score">0</span></p>
+                <p id="result-message">Result message goes here</p>
+                <button id="restart-btn" class="btn">Try Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
